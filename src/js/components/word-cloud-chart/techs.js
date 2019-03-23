@@ -1,210 +1,192 @@
-var techs = [
-  {
-    "name": "Machine Learning",
-    "value": 10000,
-    "textStyle": {
-      "normal": {
-        "color": "black"
-      },
-      "emphasis": {
-        "color": "red"
+function getTechs() {
+  return [
+    {
+      "name": "Think",
+      "value": 10000,
+      "textStyle": {
+        "normal": {
+          "color": "black"
+        },
+        "emphasis": {
+          "color": "red"
+        }
       }
+    },
+    {
+      "name": "Php",
+      "value": 6200
+    },
+    {
+      "name": "Laravel",
+      "value": 6181
+    },
+    {
+      "name": "Simfony",
+      "value": 4386
+    },
+    {
+      "name": "OOP",
+      "value": 4055
+    },
+    {
+      "name": "Psr2",
+      "value": 3333
+    },
+    {
+      "name": "Algorithms",
+      "value": 3333
+    },
+    {
+      "name": "PostrgreSQL",
+      "value": 3500
+    },
+    {
+      "name": "MySQL",
+      "value": 2700
+    },
+    {
+      "name": "Jobs",
+      "value": 2500
+    },
+    {
+      "name": "Workers",
+      "value": 2333
+    },
+    {
+      "name": "PhpUnit",
+      "value": 1900
+    },
+    {
+      "name": "Mockery",
+      "value": 1800
+    },
+    {
+      "name": "TDD",
+      "value": 1500
+    },
+    {
+      "name": "Unit testing",
+      "value": 1400
+    },
+    {
+      "name": "Integration testing",
+      "value": 1325
+    },
+    {
+      "name": "Design Patterns",
+      "value": 1300
+    },
+    {
+      "name": "Refactoring",
+      "value": 1250
+    },
+    {
+      "name": "Extracting",
+      "value": 1000
+    },
+    {
+      "name": "Responsabilities",
+      "value": 900
+    },
+    {
+      "name": "Interfaces & Classes",
+      "value": 875
+    },
+    {
+      "name": "Docker",
+      "value": 850
+    },
+    {
+      "name": "Microservices",
+      "value": 833
+    },
+    {
+      "name": "Containers",
+      "value": 790
+    },
+    {
+      "name": "APIs",
+      "value": 775
+    },
+    {
+      "name": "Monitoring",
+      "value": 700
+    },
+    {
+      "name": "Aws",
+      "value": 650
+    },
+    {
+      "name": "Prometheus",
+      "value": 600
+    },
+    {
+      "name": "Graphana",
+      "value": 575
+    },
+    {
+      "name": "Elastic Search",
+      "value": 500
+    },
+    {
+      "name": "ELB",
+      "value": 400
+    },
+    {
+      "name": "RDS",
+      "value": 300
+    },
+    {
+      "name": "EC2",
+      "value": 290
+    },
+    {
+      "name": "Resources",
+      "value": 280
+    },
+    {
+      "name": "Budget",
+      "value": 250
+    },
+    {
+      "name": "Code Review",
+      "value": 235
+    },
+    {
+      "name": "Typescript",
+      "value": 190
+    },
+    {
+      "name": "JavaScript",
+      "value": 185
+    },
+    {
+      "name": "Vue",
+      "value": 180
+    },
+    {
+      "name": "React",
+      "value": 175
+    },
+    {
+      "name": "Angular",
+      "value": 175
+    },
+    {
+      "name": "Webpack",
+      "value": 160
+    },
+    {
+      "name": "Gulp",
+      "value": 155
+    },
+    {
+      "name": "Npm",
+      "value": 150
+    },
+    {
+      "name": "Composer",
+      "value": 305
     }
-  },
-  {
-    "name": "Deep Learning",
-    "value": 6181
-  },
-  {
-    "name": "Computer Vision",
-    "value": 4386
-  },
-  {
-    "name": "Artificial Intelligence",
-    "value": 4055
-  },
-  {
-    "name": "Neural Network",
-    "value": 3500
-  },
-  {
-    "name": "Algorithm",
-    "value": 3333
-  },
-  {
-    "name": "Model",
-    "value": 2700
-  },
-  {
-    "name": "Supervised",
-    "value": 2500
-  },
-  {
-    "name": "Unsupervised",
-    "value": 2333
-  },
-  {
-    "name": "Natural Language Processing",
-    "value": 1900
-  },
-  {
-    "name": "Chatbot",
-    "value": 1800
-  },
-  {
-    "name": "Virtual Assistant",
-    "value": 1500
-  },
-  {
-    "name": "Speech Recognition",
-    "value": 1400
-  },
-  {
-    "name": "Convolutional Neural Network",
-    "value": 1325
-  },
-  {
-    "name": "Reinforcement Learning",
-    "value": 1300
-  },
-  {
-    "name": "Training Data",
-    "value": 1250
-  },
-  {
-    "name": "Classification",
-    "value": 1233
-  },
-  {
-    "name": "Regression",
-    "value": 1000
-  },
-  {
-    "name": "Decision Tree",
-    "value": 900
-  },
-  {
-    "name": "K-Means",
-    "value": 875
-  },
-  {
-    "name": "N-Gram Analysis",
-    "value": 850
-  },
-  {
-    "name": "Microservices",
-    "value": 833
-  },
-  {
-    "name": "Pattern Recognition",
-    "value": 790
-  },
-  {
-    "name": "APIs",
-    "value": 775
-  },
-  {
-    "name": "Feature Engineering",
-    "value": 700
-  },
-  {
-    "name": "Random Forest",
-    "value": 650
-  },
-  {
-    "name": "Bagging",
-    "value": 600
-  },
-  {
-    "name": "Anomaly Detection",
-    "value": 575
-  },
-  {
-    "name": "Naive Bayes",
-    "value": 500
-  },
-  {
-    "name": "Autoencoder",
-    "value": 400
-  },
-  {
-    "name": "Backpropagation",
-    "value": 300
-  },
-  {
-    "name": "TensorFlow",
-    "value": 290
-  },
-  {
-    "name": "word2vec",
-    "value": 280
-  },
-  {
-    "name": "Object Recognition",
-    "value": 250
-  },
-  {
-    "name": "Python",
-    "value": 235
-  },
-  {
-    "name": "Predictive Analytics",
-    "value": 225
-  },
-  {
-    "name": "Predictive Modeling",
-    "value": 215
-  },
-  {
-    "name": "Optical Character Recognition",
-    "value": 200
-  },
-  {
-    "name": "Overfitting",
-    "value": 190
-  },
-  {
-    "name": "JavaScript",
-    "value": 185
-  },
-  {
-    "name": "Text Analytics",
-    "value": 180
-  },
-  {
-    "name": "Cognitive Computing",
-    "value": 175
-  },
-  {
-    "name": "Augmented Intelligence",
-    "value": 160
-  },
-  {
-    "name": "Statistical Models",
-    "value": 155
-  },
-  {
-    "name": "Clustering",
-    "value": 150
-  },
-  {
-    "name": "Topic Modeling",
-    "value": 145
-  },
-  {
-    "name": "Data Mining",
-    "value": 140
-  },
-  {
-    "name": "Data Science",
-    "value": 138
-  },
-  {
-    "name": "Semi-Supervised Learning",
-    "value": 137
-  },
-  {
-    "name": "Artificial Neural Networks",
-    "value": 125
-  }
-]
+  ];
+}
