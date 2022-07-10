@@ -10,10 +10,7 @@ COPY . .
 
 RUN flask init-db
 
-WORKDIR /usr/src/app/src
 EXPOSE 5000
 
-
-
-CMD ["waitress-serve", "--port=5000", "--call", "web:create_app" ]
+CMD ["python", "src/server.py"]
 
