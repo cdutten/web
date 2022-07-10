@@ -1,0 +1,21 @@
+apiVersion: skaffold/v2beta28
+kind: Config
+metadata:
+  name: web
+build:
+  artifacts:
+  - image: cdutten/flask
+    docker:
+      dockerfile: Dockerfile
+deploy:
+  kubectl:
+    manifests:
+    - k8s/web-ns.yaml
+    - k8s/web-deploy.yaml
+    - k8s/web-svc.yaml
+profiles:
+  - name: dev
+    patches:
+      - op: replace
+        path: /build/artifacts/0/docker/dockerfile
+        value: Dockerfile_dev
