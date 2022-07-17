@@ -1,9 +1,15 @@
 <!doctype html>
 <title>{% block title %}{% endblock %} - Flaskr</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 <nav>
-  <h1>CDutten.dev</h1>
+  <span id="cabin-icon" class="material-symbols-outlined">cabin</span>
+  <h1> CDutten.dev</h1>
   <ul>
+    <li><a href="asd">About me</a></li>
     {% if g.user %}
       <li><span>{{ g.user['username'] }}</span>
       <li><a href="{{ url_for('auth.logout') }}">Log Out</a>
