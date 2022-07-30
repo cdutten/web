@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 
 setup(
-    name='cdutten-web',
+    name='cduttenweb',
     version='0.1.0',
     author='Cesar Dutten',
     author_email='cdutten@gmail.com',

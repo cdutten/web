@@ -3,22 +3,22 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: web
-  name: web
+    app: cdutten-web
+  name: cdutten-web
   namespace: cdutten-web
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: web
+      app: cdutten-web
   strategy: {}
   template:
     metadata:
       labels:
-        app: web
+        app: cdutten-web
     spec:
       containers:
-      - image: cdutten/flask
+      - image: cdutten/web
         name: flask
         resources: {}
 status: {}

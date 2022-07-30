@@ -1,6 +1,6 @@
 FROM python:3.10.5
 
-ENV FLASK_APP=src/web
+ENV FLASK_APP=src/cduttenweb
 WORKDIR /usr/src/app
 
 COPY requirements.txt ./

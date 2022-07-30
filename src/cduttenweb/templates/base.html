@@ -6,8 +6,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 <nav>
-  <span id="cabin-icon" class="material-symbols-outlined">cabin</span>
-  <h1> CDutten.dev</h1>
+  <a href="{{ url_for('blog.index') }}"> <span id="cabin-icon" class="material-symbols-outlined">cabin</span> </a>
+  <h1> Cdutten.dev</h1>
   <ul>
     <li><a href="asd">About me</a></li>
     {% if g.user %}

@@ -7,12 +7,13 @@ RUN pip install --no-cache-dir -r requirements.txt &&\
     pip install -U Flask==2.1.2
 
 COPY . .
-ENV FLASK_APP=src/web
+ENV FLASK_APP=src/cduttenweb
 ENV FLASK_ENV=development
 
 EXPOSE 5000
 
-RUN flask init-db
+RUN flask init-db &&\
+    pip install -e .
 
 CMD [ "flask", "run" ]
 

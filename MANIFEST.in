@@ -1,4 +1,4 @@
-include src/web/schema.sql
-graft src/web/static
-graft src/web/templates
+include src/cduttenweb/schema.sql
+graft src/cduttenweb/static
+graft src/cduttenweb/templates
 global-exclude *.pyc
