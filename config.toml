@@ -1,0 +1,4 @@
+baseURL = 'https://cdutten.com/'
+languageCode = 'en-us'
+title = 'Cdutten'
+theme = 'ananke'
