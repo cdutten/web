@@ -1,0 +1,42 @@
+baseURL: 'https://cdutten.com/'
+title: cdutten
+enableRobotsTXT: true
+languageCode: 'en-us'
+theme: 'PaperMod'
+params:
+    ShowReadingTime: true
+    defaultTheme: auto # to switch between dark or light according to browser theme
+    ShowBreadCrumbs: true
+    homeInfoParams:
+#        Title: "Posts" # optional default will be site title
+#
+#        imageWidth: 320
+#        imageHeight: 320
+    images: "/images/logo.png" # optional
+    assets:
+      favicon: "/images/logo.png"
+      favicon16x16: "/images/logo.png"
+      favicon32x32: "/images/logo.png"
+      apple_touch_icon: "/images/logo.png"
+      safari_pinned_tab: "/images/logo.png"
+    profileMode:
+      enabled: true
+      subtitle: "SysAdmin from Argentina living in the Česká republika. Trying to explain things that have been already explained"
+      imageUrl: "/images/logo.png" # optional
+      imageTitle: "cdutten logo - anime style developer eating cheese while works"
+      imageWidth: 320
+      imageHeight: 320
+      buttons:
+        - name: Posts
+          url: "/posts"
+    alt: "cdutten logo - anime style developer eating cheese while works"
+    socialIcons: # optional
+    - name: "Twitch"
+      url: "https://www.twitch.tv/cdutten"
+    - name: Github
+      url: "https://github.com/cdutten"
+    - name: LinkedIn
+      url: "https://www.linkedin.com/in/cesar-dutten-543251120/"
+
+
+
