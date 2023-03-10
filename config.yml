@@ -7,15 +7,15 @@ params:
     defaultTheme: auto # to switch between dark or light according to browser theme
     ShowBreadCrumbs: true
     assets:
-      favicon: "web/images/logo.png"
-      favicon16x16: "web/images/logo.png"
-      favicon32x32: "web/images/logo.png"
-      apple_touch_icon: "web/images/logo.png"
-      safari_pinned_tab: "web/images/logo.png"
+      favicon: "/web/images/logo.png"
+      favicon16x16: "/web/images/logo.png"
+      favicon32x32: "/web/images/logo.png"
+      apple_touch_icon: "/web/images/logo.png"
+      safari_pinned_tab: "/web/images/logo.png"
     profileMode:
       enabled: true
       subtitle: "SysAdmin from Argentina living in the Česká republika. Trying to explain things that have been already explained"
-      imageUrl: "images/logo.png" # optional
+      imageUrl: "/web/images/logo.png" # optional
       imageTitle: "cdutten logo - anime style developer eating cheese while works"
       imageWidth: 320
       imageHeight: 320
