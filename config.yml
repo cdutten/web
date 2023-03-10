@@ -21,7 +21,7 @@ params:
       imageHeight: 320
       buttons:
         - name: Posts
-          url: "web/posts"
+          url: "/web/posts"
     socialIcons: # optional
     - name: "Twitch"
       url: "https://www.twitch.tv/cdutten"
