@@ -7,11 +7,11 @@ params:
     defaultTheme: auto # to switch between dark or light according to browser theme
     ShowBreadCrumbs: true
     assets:
-      favicon: "/images/logo.png"
-      favicon16x16: "/images/logo.png"
-      favicon32x32: "/images/logo.png"
-      apple_touch_icon: "/images/logo.png"
-      safari_pinned_tab: "/images/logo.png"
+      favicon: "web/images/logo.png"
+      favicon16x16: "web/images/logo.png"
+      favicon32x32: "web/images/logo.png"
+      apple_touch_icon: "web/images/logo.png"
+      safari_pinned_tab: "web/images/logo.png"
     profileMode:
       enabled: true
       subtitle: "SysAdmin from Argentina living in the Česká republika. Trying to explain things that have been already explained"
