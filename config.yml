@@ -15,7 +15,7 @@ params:
     profileMode:
       enabled: true
       subtitle: "SysAdmin from Argentina living in the Česká republika. Trying to explain things that have been already explained"
-      imageUrl: "web/images/logo.png" # optional
+      imageUrl: "images/logo.png" # optional
       imageTitle: "cdutten logo - anime style developer eating cheese while works"
       imageWidth: 320
       imageHeight: 320
