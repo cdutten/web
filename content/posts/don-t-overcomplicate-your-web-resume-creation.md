@@ -1,5 +1,5 @@
 ---
-title: "How I created my web resume using GO and Hugo"
+title: "Don't overcomplicate your web resume creation"
 date: 2023-01-12T22:15:36+01:00
 draft: false
 
