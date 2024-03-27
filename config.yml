@@ -14,7 +14,7 @@ params:
       safari_pinned_tab: "/web/images/logo.png"
     profileMode:
       enabled: true
-      title: "Sysadmin"
+      title: "DevOps"
       subtitle: "From Argentina, living in the Česká republika. Trying to explain things that have already been explained."
       imageUrl: "/web/images/logo.png" # optional
       imageTitle: "cdutten logo - anime style developer eating cheese while works"
